@@ -1,0 +1,200 @@
+<!--Unit 6 Project Additional Feature
+  [ no ] Feature 1 - Upload an Image to the Replit 
+  [ no ] Feature 2 - use Flexbox 
+  [ no ] Feature 3 - use CSS Grid 
+  [ no ] Feature 4 - use Glowing Text 
+  [ yes ] Feature 5 - use Flip Card 
+  [ no ] Feature 6 - include an Image Reflection 
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Unit 6 Project</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <style>
+
+    body {
+      background-color: lightgoldenrodyellow;
+      margin-top: 50px;
+      margin-left: 100px;
+      margin-right: 100px;
+      font-family: 'La Belle Aurore', cursive;
+
+    }
+
+    
+
+    h2 , h3 {
+      color: rgb(204, 204, 0);
+    }
+
+    h4 {
+      font-size: 40px;
+      font-family: 'La Belle Aurore', cursive;
+    }
+
+
+
+    #title {
+    font-size: 100px;
+      text-align: center;
+    line-height: 80px;
+    }
+
+    h2.wedding-date {
+      font-size: 50px;
+      text-align: center;
+      line-height: 0.15px;
+    }
+
+      h3.wedding-location {
+        font-size: 35px; 
+        text-align: center;
+      }
+
+      .container {
+      display: inline-block; 
+      }
+
+      .typed-out {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      animation: 
+      typing 1s steps(20, end) forwards;
+      font-size: 1.6rem;
+      width: 0;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+
+      .flip-card {
+        background-color: transparent;
+        width: 1000px;
+
+        perspective: 1000px;
+        display: inline-block;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: black;
+        color: black;
+        transform: rotateY(180deg);
+        font-family: 'PT Serif', serif;
+      }
+
+      button {
+        border: none;
+        border-radius: 30px;
+        color: rgb(204, 204, 0);
+        background-color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        font-family: 'PT Serif', serif;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+
+      .gold-frame {
+        border: 10px double rgb(204, 204, 0);
+      }
+
+      .wedding-pic {
+        width: 1000px;
+      
+      }
+
+      .regular-pic {
+        width: 500px;
+      }
+
+      #love-story {
+        line-height: 2px;
+      }
+
+
+  </style>
+</head>
+
+  <body>
+    
+      
+  <h1 id="title">  Jim & Pam </h1>
+    <h2 class="wedding-date"> October 8, 2009 </h2>
+    <h3 class="wedding-location"> Spruce Avenue Presbyterian Church </h3>
+    
+    
+   <center>
+  <a target="_blank" href="https://www.youtube.com/watch?v=ryxUeWEcUqE">
+    <button> RSVP </button>
+  </a>
+<br>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img class="gold-frame wedding-pic" src="https://www.orangejuice-etc.com/wp-content/uploads/2011/06/Jim-and-Pam.jpg" width="1000">
+        </div>
+        <div class="flip-card-back">
+          <h4 id="love-story">Our Love Story</h4>
+          <p> "Jim and Pam: A Dunder Mifflin Love Affair. From stolen glances in the bustling world of Scranton's favorite paper company to a heartwarming proposal at a gas station, Jim and Pam's love story is a testament to the magic that can unfold in the most unexpected places. Surrounded by quirky colleagues, their journey from friends to life partners is marked by playful banter, tender gestures, and the enduring power of genuine connection. <strong> Join us as we celebrate our own unique love story, inspired by the laughter, romance, and unwavering support that define Jim and Pam's timeless relationship. Here's to a lifetime of shared pranks, stolen glances, and a love that stands the test of office antics and beyond.</strong>"</p>
+
+         <img class="gold-frame regular-pic" src="https://i0.wp.com/marvelousgeeksmedia.com/wp-content/uploads/2022/01/image.jpeg?ssl=1">
+        </div>
+      </div>
+    </div>
+
+     </center> 
+
+
+  </body>
+  </html>
+
